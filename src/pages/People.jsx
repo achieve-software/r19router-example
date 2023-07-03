@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
+import{Link,useNavigate} from "react-router-dom";
 
 const People = () => {
   const [people, setPeople] = useState([]);
-
+const navigate=useNavigate()
   const getPeople = () => {
     fetch("https://reqres.in/api/users")
       .then((res) => res.json())
@@ -24,6 +25,7 @@ const People = () => {
               key={id}
               className=" col-sm-12 col-md-6 col-lg-4"
               type="button"
+              onClick={()=> navigate(`${id}`,{state:person})}
             >
               <img className="rounded" src={avatar} alt="img" />
               <h6>
