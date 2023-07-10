@@ -31,7 +31,7 @@ function Nav() {
             </li>
 
             <li className="nav-item">
-              <Link to="/paths" className="nav-link" aria-current="page">
+              <Link to="/path" className="nav-link" aria-current="page">
                 Paths
               </Link>
             </li>
