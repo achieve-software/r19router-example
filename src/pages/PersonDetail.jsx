@@ -1,11 +1,9 @@
 import { useLocation, useNavigate, useParams } from "react-router-dom";
 import React, { useEffect, useState } from "react";
-import NotFound from "./NotFound";
-const PersonDetail = () => {
+import NotFound from "./NotFound";const PersonDetail = () => {
   // const {state:person} =useLocation()
   const navigate = useNavigate();  const { id } = useParams();
-  const [person, setPerson] = useState([]);  
-  const [error, setError] = useState(false)
+  const [person, setPerson] = useState([]);  const [error, setError] = useState(false)
   const [loading, setLoading] = useState(true) 
    const getPerson = () => {
     fetch(`https://reqres.in/api/users/${id}`)
