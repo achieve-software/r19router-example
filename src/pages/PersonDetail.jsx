@@ -1,6 +1,7 @@
 import { useLocation, useNavigate, useParams } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import NotFound from "./NotFound";
+import spinner from "../img/Spinner-2.gif"
 const PersonDetail = () => {
   // const {state:person} =useLocation()
   const navigate = useNavigate();  const { id } = useParams();
@@ -22,11 +23,15 @@ const PersonDetail = () => {
   };
   useEffect(() => {
     getPerson();
-  }, []);  if(error){    return (
+  }, []); 
+   if(error){   
+     return (
       <>
       <NotFound/>
 {/* <h1 className="text-center text-danger"> oohn no, something went wrong </h1> */}</>
-    )  } else {
+    )  }
+    
+     else {
     return (
       <div>
         <div className="container text-center">
