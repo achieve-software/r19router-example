@@ -1,3 +1,45 @@
+
+# React ToDo App
+## Description
+Project aims to create ToDo App using React
+## Project Skeleton
+```
+|----public
+        |----index.html
+|----src        
+        |----components
+                 |----About.jsx
+                 |----Courses.jsx
+                 |----Footer.jsx
+                 |----Nav.jsx
+        |----img
+                 |----404.png
+                 |----logo.png
+                 |----Spinner-2.gif
+        |----pages
+                 |----Aws.jsx
+                 |----Contact.jsx
+                 |----Fullstack.jsx
+                 |----Home.jsx
+                 |----Login.jsx
+                 |----NotFound.jsx
+                 |----Path.jsx
+                 |----People.jsx
+                 |----PersonDetail.jsx
+                 |----PrivateRouter.jsx
+                 |----ReactJS.jsx
+
+        |----App.js
+        |----App.css
+        |----index.js
+|----readme.md  
+```
+## Project-gif
+![JavaScript-project](https://github.com/achieve-software/achieve-software/blob/main/img/rooterex.gif?raw=true)
+## Project-link
+https://willowy-fox-60c023.netlify.app/
+### At the end of the project, following topics are to be covered;
+-React
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
